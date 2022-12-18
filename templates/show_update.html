@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Update contact</h1>
+    <form method="post">
+        <input type="text" name="name" class="form-control" value="{{ contact.name }}" placeholder="Contact name"><br>
+        <input type="text" name="phone" class="form-control" value="{{ contact.phone }}" placeholder="Contact phone"><br>
+        <input type="text" name="email" class="form-control" value="{{ contact.email }}" placeholder="Contact email"><br>
+        <input type="submit" class="btn btn-success" value="edit">
+    </form>
+
+
+</div>
+{% endblock %}

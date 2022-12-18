@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Show contacts</h1>
+
+    <div class="alert alert-info">
+        <h2>{{ contact.name }}</h2>
+        <p>{{ contact.phone }}</p>
+        <p>{{ contact.email }}</p>
+        <a href="/show/{{ contact.id }}/delete" class="btn btn-danger">Delete</a>
+        <a href="/show/{{ contact.id }}/update" class="btn btn-success">Update</a>
+
+    </div>
+
+</div>
+{% endblock %}

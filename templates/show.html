@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Show contacts</h1>
+
+  {% for con in contacts %}
+    <div class="alert alert-info">
+        <h2>{{ con.name }}</h2>
+        <p>{{ con.phone }}</p>
+        <p>{{ con.email }}</p>
+        <a href="/show/{{ con.id }}" class="btn btn-warning">Edit</a>
+
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
